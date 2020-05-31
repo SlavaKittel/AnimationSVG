@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anime logo animation | anime.js</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+
+
+    <script src="../../js/anime.min.js"></script>
+
+    <style>
+      body {
+        /* opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; */
+        background-color: rgb(73, 73, 73);
+      }
+      .logo-animation {
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; */
+      }
+      .letters {
+        /* position: relative;
+        display: flex;
+        width: 2082px;
+        height: 562px; */
+      }
+      .letter {
+        /* position: relative;
+        width: 2000px;
+        height: 500px; */
+      }
+      /* .letter:not(:first-child) {
+        margin-left: -42px;
+      }
+      .letter-i {
+        z-index: 1;
+        width: 82px;
+        transform-origin: 100% 50%;
+      }
+      .dot {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        transform: scale(0);
+      }
+      .dot-i {
+        top: 0;
+        left: 240px;
+      }
+      .dot-e {
+        bottom: 0;
+        right: 0;
+      }
+      .logo-icon {
+        display: flex;
+        position: absolute;
+        left: 230px;
+        top: -10px;
+        width: 222px;
+        height: 62px;
+      }
+      .icon {
+        width: 62px;
+        height: 62px;
+        opacity: 0;
+      }
+      .icon-text {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 160px;
+        height: 62px;
+      }
+      .icon-text path,
+      .icon-text polygon {
+        opacity: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="logo-animation">
+      <div class="">
+        <!-- <div class="letter letter-2">
+          <svg viewBox="0 0 800 600">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path
+                class="fill in"
+                stroke-width="10"
+                d="M89,279.1 89,268.5 39.1,268.5 27.4,279.8 27.4,308.7 39.6,321 84.1,321 94.9,336.5 94.9,360.8"
+              />
+              <path
+                class="fill out"
+                stroke-width="10"
+                d="M89,279.1 89,268.5 39.1,268.5 27.4,279.8 27.4,308.7 39.6,321 84.1,321 94.9,336.5 94.9,360.8"
+              />
+              <path
+                class="line out"
+                stroke-width="2"
+                d="M121 161V81.33C120.18 58.59 102.7 41 81 41a40 40 0 1 0 0 
+                80h20v40H81A80 80 0 1 1 81 1c43.8 0 78.66 35.27 80 79.7V161h-40z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-1">
+          <svg viewBox="0 0 800 600">
+            <g fill="none" fill-rule="evenodd" stroke="white">
+              <path
+                class="fill in"
+                stroke-width="10"
+                d="M27.4,361.7 27.4,373.6 175.4,373.6 211,268.5 212.1,268.5 254.7,373.6 256.3,373.6 296.7,268.5 
+                298.2,268.5 345.6,379.4"
+              />
+              <path
+                class="fill out"
+                stroke-width="10"
+                d="M27.4,361.7 27.4,373.6 175.4,373.6 211,268.5 212.1,268.5 254.7,373.6 256.3,373.6 296.7,268.5 
+                298.2,268.5 345.6,379.4"
+              />
+              <path
+                class="line out"
+                stroke-width="2"
+                d="M121 161V81.33C120.18 58.59 102.7 41 81 41a40 40 0 1 0 0 
+                80h20v40H81A80 80 0 1 1 81 1c43.8 0 78.66 35.27 80 79.7V161h-40z"
+              />
+            </g>
+          </svg>
+        </div> -->
+
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800 600" style="enable-background:new 0 0 800 600;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:13;stroke-miterlimit:10;}
+  .st1{fill:none;stroke:#000000;stroke-width:13;stroke-miterlimit:10;}
+  .st2{fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:1;}
+</style>
+<polyline class="st1 fill in" points="89,279.1 89,268.5 39.1,268.5 27.4,279.8 27.4,308.7 39.6,321 84.1,321 94.9,336.5 94.9,360.8 "/>
+<polyline class="st0 fill in" points="27.4,361.7 27.4,373.6 175.4,373.6 211,268.5 212.1,268.5 254.7,373.6 256.3,373.6 296.7,268.5 
+  298.2,268.5 345.6,379.4 "/>
+<line class="st1 fill in speed" x1="116.1" y1="360.8" x2="116.1" y2="263.2"/>
+<line class="st1 fill in speed" x1="202.6" y1="338.5" x2="223.2" y2="338.5"/>
+<line class="st1 fill in speed" x1="287.9" y1="338.5" x2="308.5" y2="338.5"/>
+<polyline class="st0 fill in slow" points="400,254.5 400,254.5 400,315.3 482.5,369.7 485.1,369.7 485.1,260.3 647.5,260.6 647.5,369.9 
+  785.9,369.9 785.9,395.8 23,395.8 "/>
+<line class="st1 fill in speed" x1="400" y1="333.7" x2="400" y2="374.8"/>
+<line class="st1 fill in speed" x1="415.8" y1="312.1" x2="458.4" y2="257.2"/>
+<line class="st1 fill in speed" x1="472.8" y1="236.5" x2="493.4" y2="236.5"/>
+<line class="st1 fill in speed" x1="539.3" y1="274.3" x2="539.3" y2="373.8"/>
+<line class="st1 fill in speed" x1="591.6" y1="274" x2="591.6" y2="373.6"/>
+<line class="st1 fill in speed" x1="658.6" y1="310.5" x2="684.2" y2="310.5"/>
+<line class="st1 fill in speed" x1="658.6" y1="260.7" x2="705.2" y2="260.7"/>
+<line class="st1 fill in speed" x1="719" y1="352.4" x2="719" y2="254.8"/>
+
+<polyline class="st0 fill out slow" points="400,254.5 400,254.5 400,315.3 482.5,369.7 485.1,369.7 485.1,260.3 647.5,260.6 647.5,369.9 
+  785.9,369.9 785.9,395.8 23,395.8 "/>
+<polyline class="st1 fill out" points="89,279.1 89,268.5 39.1,268.5 27.4,279.8 27.4,308.7 39.6,321 84.1,321 94.9,336.5 94.9,360.8 "/>
+<line class="st1 fill out" x1="116.1" y1="360.8" x2="116.1" y2="263.2"/>
+<line class="st1 fill out" x1="202.6" y1="338.5" x2="223.2" y2="338.5"/>
+<line class="st1 fill out" x1="287.9" y1="338.5" x2="308.5" y2="338.5"/>
+<line class="st1 fill out" x1="400" y1="333.7" x2="400" y2="374.8"/>
+<polyline class="st0 fill out" points="27.4,361.7 27.4,373.6 175.4,373.6 211,268.5 212.1,268.5 254.7,373.6 256.3,373.6 296.7,268.5 
+298.2,268.5 345.6,379.4 "/>
+<line class="st1 fill out" x1="415.8" y1="312.1" x2="458.4" y2="257.2"/>
+<line class="st1 fill out" x1="472.8" y1="236.5" x2="493.4" y2="236.5"/>
+<line class="st1 fill out" x1="539.3" y1="274.3" x2="539.3" y2="373.8"/>
+<line class="st1 fill out" x1="591.6" y1="274" x2="591.6" y2="373.6"/>
+<line class="st1 fill out" x1="658.6" y1="310.5" x2="684.2" y2="310.5"/>
+<line class="st1 fill out" x1="658.6" y1="260.7" x2="705.2" y2="260.7"/>
+<line class="st1 fill out" x1="719" y1="352.4" x2="719" y2="254.8"/>
+
+<polygon class="st2 line out" points="791.9,401.8 23,401.8 23,389.8 779.9,389.8 779.9,375.9 641.5,375.9 641.5,266.6 491.1,266.3 
+	491.1,375.7 480.7,375.7 394,318.5 394,254.5 406,254.5 406,312.1 479.1,360.3 479.1,254.3 653.5,254.6 653.5,363.9 791.9,363.9 "/>
+<polygon class="st2 line out" points="340.1,381.8 297.7,282.6 260.4,379.6 250.7,379.6 212,284.2 179.7,379.6 21.4,379.6 21.4,361.7 
+	33.4,361.7 33.4,367.6 171.1,367.6 206.7,262.5 216.1,262.5 255.4,359.3 292.6,262.5 302.2,262.5 351.1,377 "/>
+<polygon class="st2 line out" points="100.9,360.8 88.9,360.8 88.9,338.4 81,327 37.1,327 21.4,311.2 21.4,277.3 36.7,262.5 95,262.5 
+		95,279.1 83,279.1 83,274.5 41.5,274.5 33.4,282.3 33.4,306.2 42.1,315 87.2,315 100.9,334.6 	"/>
+<rect class="st2 line out" x="110.1" y="263.2" class="st2" width="12" height="97.6"/>
+<rect class="st2 line out" x="202.6" y="332.5" class="st2" width="20.6" height="12"/>
+<rect class="st2 line out" x="287.9" y="332.5" class="st2" width="20.6" height="12"/>
+<rect class="st2 line out" x="713" y="254.8" class="st2" width="12" height="97.6"/>
+<rect class="st2 line out" x="394" y="333.7" class="st2" width="12" height="41.1"/>
+<rect class="st2 line out" x="402.4" y="278.6" transform="matrix(0.6131 -0.79 0.79 0.6131 -55.7599 455.4454)" class="st2" width="69.5" height="12"/>
+<rect class="st2 line out" x="533.3" y="274.3" class="st2" width="12" height="99.5"/>
+<rect class="st2 line out" x="585.6" y="274" class="st2" width="12" height="99.6"/>
+<rect class="st2 line out" x="658.6" y="304.5" class="st2" width="25.6" height="12"/>
+<rect class="st2 line out" x="658.6" y="254.7" class="st2" width="46.6" height="12"/>
+<rect class="st2 line out" x="472.8" y="230.5" class="st2" width="20.6" height="12"/>
+
+</svg>
+
+
+        <!-- <div class="letter letter-a">
+          <svg viewBox="0 0 162 162">
+            <g fill="none" fill-rule="evenodd" stroke="#5E89FB">
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M101 141H81a60 60 0 1 1 0-120c33.14 0 59 26.86 60 60v80"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M141 161V81c-1-33.14-26.86-60-60-60a60 60 0 1 0 0 120h20"
+              />
+              <path
+                class="line out"
+                stroke-width="20"
+                d="M121 161V81.33C120.18 58.59 102.7 41 81 41a40 40 0 1 0 0 
+                80h20v40H81A80 80 0 1 1 81 1c43.8 0 78.66 35.27 80 79.7V161h-40z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-n">
+          <svg viewBox="0 0 162 162">
+            <g fill="none" fill-rule="evenodd" stroke="#FB155A">
+              <path class="fill in" stroke-width="40" d="M21 161V1" />
+              <path class="fill out" stroke-width="40" d="M21 1v160" />
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"
+              />
+              <path class="line out" stroke-width="2" d="M41 161V1H1v160h40z" />
+              <path
+                class="line out"
+                stroke-width="20"
+                d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 
+                80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-i">
+          <svg viewBox="0 0 82 162">
+            <g fill="none" fill-rule="evenodd" stroke="#18FF92">
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M21 61v20a60 60 0 0 0 60 60"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M81 141a60 60 0 0 1-60-60V61"
+              />
+              <path
+                class="line out"
+                stroke-width="20"
+                d="M81 121a40 40 0 0 1-40-40V61H1v20a80 80 0 0 0 80 80v-40z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-m-1">
+          <svg viewBox="0 0 162 162">
+            <g fill="none" fill-rule="evenodd" stroke="#5E89FB">
+              <path class="fill in" stroke-width="40" d="M21 161V1" />
+              <path class="fill out" stroke-width="40" d="M21 1v160" />
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"
+              />
+              <path class="line out" stroke-width="2" d="M41 161V1H1v160h40z" />
+              <path
+                class="line out"
+                stroke-width="2"
+                d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 
+                80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-m-2">
+          <svg viewBox="0 0 162 162">
+            <g fill="none" fill-rule="evenodd" stroke="#FB155A">
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M21 161V81c1-33.14 26.86-60 60-60a60 60 0 0 1 60 60v80"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M141 161V81a60 60 0 0 0-60-60c-33.14 0-59 26.86-60 60v80"
+              />
+              <path
+                class="line out"
+                stroke-width="2"
+                d="M1 161V80.4C2.35 36.27 37.2 1 81 1a80 80 0 0 1 80 
+                80v80h-40V81a40 40 0 0 0-40-40c-21.7 0-39.18 17.59-40 40.33V161H1z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="letter letter-e">
+          <svg viewBox="0 0 162 162">
+            <g fill="none" fill-rule="evenodd" stroke="#18FF92">
+              <path
+                class="fill in"
+                stroke-width="40"
+                d="M81 101h60V81c-1-33.14-26.86-60-60-60a60 60 0 1 0 0 120"
+              />
+              <path
+                class="fill out"
+                stroke-width="40"
+                d="M81 141a60 60 0 1 1 0-120c33.14 0 59 26.86 60 60v20H81"
+              />
+              <path
+                class="line out"
+                stroke-width="2"
+                d="M81 81v40h80V80.7C159.66 36.27 124.8 1 81 1a80 80 0 1 0 0 
+                160v-40a40 40 0 1 1 0-80c21.6 0 39.01 17.42 39.99 40H81z"
+              />
+            </g>
+          </svg>
+        </div> -->
+        <!-- <div class="logo-icon">
+        <div class="icon">
+          <svg viewBox="0 0 62 62">
+            <g fill="none" fill-rule="evenodd" stroke-width="2" transform="translate(1 1)">
+              <path class="icon-curve" stroke="#FF1554" d="M0 16a80.88 80.88 0 0 1 44 44"/>
+              <path class="icon-line" stroke="#5E89FB" d="M4 0h54a2 2 0 0 1 2 2.01V58A2 2 0 0 1 58 60H2a2 2 0 0 1-2-2.01V2A2 2 0 0 1 2 0h2z"/>
+              <rect width="40" height="40" x="10" y="10" stroke="#18FF92" rx="20"/>
+            </g>
+          </svg>
+        </div>
+        <div class="icon-text">
+          <svg viewBox="0 0 160 62">
+            <g fill="#FBF3FB" fill-rule="evenodd">
+              <path d="M27.33 18h1.73l10.15 25.7h-1.69l-3.24-8.24H21.97l-3.28 8.24H17L27.33 18zm6.45 16.1l-5.51-14.55h-.07l-5.73 14.54h11.3z"/>
+              <polygon points="51.334 18 53.314 18 69.55 41.58 69.622 41.58 69.622 18 71.206 18 71.206 43.704 69.334 43.704 52.99 19.944 52.918 19.944 52.918 43.704 51.334 43.704"/>
+              <polygon points="86.027 18 87.611 18 87.611 43.704 86.027 43.704"/>
+              <polygon points="102.433 18 104.701 18 114.745 41.94 114.817 41.94 124.753 18 127.021 18 127.021 43.704 125.437 43.704 125.437 19.944 125.365 19.944 115.573 43.704 113.989 43.704 104.089 19.944 104.017 19.944 104.017 43.704 102.433 43.704"/>
+              <polygon points="141.843 18 159.123 18 159.123 19.368 143.427 19.368 143.427 29.664 158.187 29.664 158.187 31.032 143.427 31.032 143.427 42.336 159.303 42.336 159.303 43.704 141.843 43.704"/>
+            </g>
+          </svg>
+        </div>
+      </div> -->
+        <!-- <div class="dot dot-i">
+          <svg viewBox="0 0 42 42">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="40" height="40" x="1" y="1" fill="#17F28C" rx="20"/>
+          </g>
+        </svg>
+      </div>
+      <div class="dot dot-e">
+        <svg viewBox="0 0 42 42">
+          <g fill="none" fill-rule="evenodd">
+            <rect width="40" height="40" x="1" y="1" fill="#FFFFFF" rx="20"/>
+          </g>
+        </svg>
+      </div> -->
+      </div>
+    </div>
+
+    <script>
+      var logoAnimation = (function() {
+        var logoEl = document.querySelector(".logo-animation");
+        var pathEls = document.querySelectorAll(
+          ".logo-animation path:not(.icon-curve)"
+        );
+        var innerWidth = window.innerWidth;
+        var maxWidth = 740;
+        var logoScale = innerWidth <= maxWidth ? innerWidth / maxWidth : 1;
+        var logoTimeline = anime.timeline({
+          autoplay: false,
+          direction: "alternate",
+          loop: false
+        });
+
+        logoEl.style.transform = "translateY(50px) scale(" + logoScale + ")";
+
+        for (var i = 0; i < pathEls.length; i++) {
+          var el = pathEls[i];
+          el.setAttribute("stroke-dashoffset", anime.setDashoffset(el));
+        }
+
+        logoTimeline
+          .add(
+            {
+              targets: ".dot-e",
+              translateX: [
+                {
+                  value: -600,
+                  duration: 520,
+                  delay: 200,
+                  easing: "easeInQuart"
+                },
+                {
+                  value: [-100, 0],
+                  duration: 500,
+                  delay: 1000,
+                  easing: "easeOutQuart"
+                }
+              ],
+              scale: [
+                { value: [0, 1], duration: 200, easing: "easeOutBack" },
+                { value: 0, duration: 20, delay: 500, easing: "easeInQuart" },
+                {
+                  value: 1,
+                  duration: 200,
+                  delay: 1000,
+                  easing: "easeOutQuart"
+                },
+                { value: 0, duration: 400, delay: 500, easing: "easeInBack" }
+              ]
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".dot-i",
+              translateY: { value: [-200, 0], duration: 500, elasticity: 400 },
+              scale: [
+                { value: [0, 1], duration: 100, easing: "easeOutQuart" },
+                { value: 0, duration: 400, delay: 1400, easing: "easeInBack" }
+              ],
+              delay: 1200
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".fill.in",
+              strokeDashoffset: {
+                value: [anime.setDashoffset, 0],
+                duration: 1000,
+                delay: function(el, i, t) {
+                  return 100 + i * 200;
+                },
+                easing: "linear"
+              },
+              // stroke: {
+              //   value: [
+              //     "#FFF",
+              //     function(el) {
+              //       return anime.get(el.parentNode, "stroke");
+              //     }
+              //   ],
+              //   duration: 500,
+              //   delay: 500,
+              //   easing: "easeInQuad"
+              // },
+              opacity: {
+                value: 0,
+                duration: 1,
+                delay: function(el, i, t) {
+                  return 3500 + i * 80;
+                }
+              }
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".fill.in.speed",
+              strokeDashoffset: {
+                value: [anime.setDashoffset, 0],
+                duration: 500,
+                delay: function(el, i, t) {
+                  return 100 + i * 250;
+                },
+                easing: "linear"
+              },
+              opacity: {
+                value: 0,
+                duration: 1,
+                delay: function(el, i, t) {
+                  return 3400 + i * 80;
+                }
+              }
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".fill.in.slow",
+              strokeDashoffset: {
+                value: [anime.setDashoffset, 0],
+                duration: 2100,
+                delay: 1000,
+                easing: "linear"
+              },
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".fill.out",
+              strokeDashoffset: [
+                {
+                  value: [anime.setDashoffset, anime.setDashoffset],
+                  duration: 3400,
+                },
+                {
+                  value: [0, anime.setDashoffset],
+                  duration: 2100,
+                  delay: function(el, i) {
+                    return 500 + i * 100;
+                  },
+                  easing: "easeInQuart"
+                }
+              ]
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".fill.out.slow",
+              strokeDashoffset: [
+                {
+                  value: [anime.setDashoffset, anime.setDashoffset],
+                  duration: 3900,
+                },
+                {
+                  value: [0, anime.setDashoffset],
+                  duration: 2900,
+                  delay: 0,
+                  easing: "easeInSine"
+                }
+              ]
+            },
+            0
+          )
+          .add( 
+            {
+              targets: ".line.out",
+              strokeDashoffset: {
+                value: [0, anime.setDashoffset],
+                duration: 1900,
+                delay: function(el, i, t) {
+                  return 7000 + i * 100;
+                },
+                easing: "easeInSine"
+              },
+              strokeWidth: {
+                value: [0, 0.5],
+                delay: function(el, i, t) {
+                  return 3000 + i * 100;
+                },
+                duration: 200,
+                easing: "linear"
+              }
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".icon",
+              opacity: {
+                value: 1,
+                duration: 10,
+                delay: 2800,
+                easing: "linear"
+              },
+              translateY: { value: 60, duration: 800 },
+              delay: 4200
+            },
+            0
+          )
+          .add(
+            {
+              targets: ".icon-line",
+              strokeDashoffset: [
+                {
+                  value: [anime.setDashoffset, anime.setDashoffset],
+                  duration: 3000
+                },
+                { value: 0, duration: 1200, easing: "easeInOutQuart" }
+              ],
+              strokeWidth: {
+                value: [8, 2],
+                delay: 3000,
+                duration: 800,
+                easing: "easeInQuad"
+              },
+              stroke: {
+                value: [
+                  "#FFF",
+                  function(el) {
+                    return anime.get(el, "stroke");
+                  }
+                ],
+                duration: 800,
+                delay: 3400,
+                easing: "easeInQuad"
+              }
+            },
+            0
+          )
+          .add(
+            {
+              targets: [".icon-text path", ".icon-text polygon"],
+              translateY: [50, 0],
+              opacity: { value: [0, 1], duration: 100, easing: "linear" },
+              delay: function(el, i, t) {
+                return 4200 + i * 20;
+              }
+            },
+            0
+          );
+
+        function init() {
+          document.body.classList.add("ready");
+          logoTimeline.play();
+        }
+
+        return {
+          init: init
+        };
+      })();
+
+      window.onload = function() {
+        logoAnimation.init();
+      };
+    </script>
+  </body>
+</html>
+
